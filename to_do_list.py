@@ -16,10 +16,10 @@ while True:
 
     def clear_list():
         print("Czy na pewno chcesz wyczyścić listę?")
-        clear_choice = input("Y or N ")
-        if clear_choice == "Y" or clear_choice == "y":
+        clear_list = input("Y or N ")
+        if clear_list == "Y" or clear_list == "y":
             to_do_list.clear()
-        elif clear_choice == "N" or clear_choice == "n":
+        elif clear_list == "N" or clear_list == "n":
 
             def see_things():
                 print(to_do_list)
