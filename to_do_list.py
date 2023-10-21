@@ -16,18 +16,18 @@ while True:
 
     def clear_list():
         print("Czy na pewno chcesz wyczyścić listę?")
-        clear_list = input("Y or N ")
-        if clear_list == "Y" or clear_list == "y":
+        clear_list = input("Y or N ").lower()
+        if clear_list == "y":
             to_do_list.clear()
-        elif clear_list == "N" or clear_list == "n":
+        elif clear_list == "n":
 
             def see_things():
                 print(to_do_list)
 
     def create_file():
         print("Chcesz stworzyć plik txt?")
-        answer = input("Y or N ")
-        if answer == "Y" or answer == "y":
+        answer = input("Y or N ").lower()
+        if answer == "y":
             inputFile = "ToDoList.txt"
         with open(inputFile, "w") as filedata:
             for item in to_do_list:
